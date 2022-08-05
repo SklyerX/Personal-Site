@@ -14,7 +14,7 @@ var requestOptions = {
     redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8080/v1/data", requestOptions)
+fetch("https://ALJWDHAWKLJDHAlkwjDHaoljwdHalkjwdHalkwjDH-alkwjhd.yoaras.repl.co/v1/data", requestOptions)
     .then(response => response.json())
     .then(result => {
         document.querySelector(".top img").src = result.pfp;
@@ -76,7 +76,7 @@ submit.addEventListener("click", () => {
                     redirect: 'follow'
                 };
 
-                fetch("http://127.0.0.1:8080/v1/contact", reqData)
+                fetch("https://ALJWDHAWKLJDHAlkwjDHaoljwdHalkjwdHalkwjDH-alkwjhd.yoaras.repl.co/v1/contact", reqData)
                     .then(response => response.text())
                     .then(result => console.log(result))
                     .catch(error => console.log('error', error));
