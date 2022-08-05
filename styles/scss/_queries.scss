@@ -1,0 +1,254 @@
+@media screen and (min-width: 490px) {
+    .socials {
+      
+        .social:last-child {
+          a {
+            font-size: 2.2rem;
+          }
+        }
+      
+        a {
+          font-size: 3rem;
+          color: #fff;
+        }
+      
+      
+      }
+    .app {
+
+        .top {
+            #slogan {
+                width: fit-content;
+                font-size: 1.7rem;
+            }
+        }
+
+
+        .testimonials {
+            .wrapper {
+                .testimonial-card {
+                    animation: animate 12s linear infinite alternate;
+                }
+            }
+        }
+    }
+    .delay {
+        animation: animate 14s linear infinite alternate;
+    }
+    @keyframes animate {
+        100% {
+            transform: translateX(calc(-35rem * 1.8));
+        }
+    }
+}
+
+@media screen and (min-width: 609px) {
+    .socials {
+      
+        .social:last-child {
+          a {
+            font-size: 4rem;
+          }
+        }
+      
+        a {
+          font-size: 5rem;
+          color: #fff;
+        }
+      
+      
+      }
+    .app {
+        
+        .top {
+
+            img {
+                width: 25rem;
+                height: 25rem;
+            }
+            
+            h1 {
+                font-size: 3rem;
+            }
+            
+            #slogan {
+                width: fit-content;
+                font-size: 3rem;
+            }
+            
+            p {
+                font-size: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            #about {
+                font-size: 2rem;
+                width: 50rem;
+                line-height: 3rem;
+            }
+            
+            
+            .cta-connect {
+                .cursor-connect {
+                    transform: translateY(6.4rem) rotate(60deg);
+                }
+            }
+            
+        }
+        
+        
+        .languages-tools {
+            .introduction {
+                margin-bottom: 4rem;
+            }
+            
+            .langs-tools {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+    }
+    @keyframes animate {
+        100% {
+            transform: translateX(calc(-35rem * 1.4));
+        }
+    }
+}
+
+@media screen and (min-width: 675px) {
+    @keyframes animate {
+        100% {
+            transform: translateX(calc(-35rem * 1.25));
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .introduction {
+        h1 {
+            font-size: 4rem;
+
+        }
+    }
+    .secondary-introduction {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    .app {
+        .contact {
+
+        
+            .board {
+        
+              label {
+        
+                input {
+                  width: 35rem;
+                }
+        
+                #message {
+                  width: 35rem;
+                }
+              }
+            }
+            #submit {
+              padding: 1.5rem 3rem;
+            }
+          }
+    }
+    @keyframes animate {
+        100% {
+            transform: translateX(calc(-35rem * .95));
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .introduction {
+        h1 {
+            font-size: 5rem;
+
+        }
+    }
+    .secondary-introduction {
+        p {
+          font-size: 2rem;
+        }
+      }
+    .app {
+
+        .top {
+            #slogan {
+                font-size: 2.7rem;
+            }
+
+            #about {
+                width: 70rem;
+            }
+        }
+
+        .projects {
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .languages-tools {
+            .langs-tools {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .contact {
+
+        
+            .board {
+        
+              label {
+        
+                input {
+                  width: 40rem;
+                }
+        
+                #message {
+                  width: 40rem;
+                }
+              }
+            }
+            #submit {
+              padding: 2rem 4rem;
+            }
+          }
+
+    }
+    @keyframes animate {
+        100% {
+            transform: translateX(calc(-35rem * .1));
+        }
+    }   
+}
+
+@media screen and (min-width: 1669px) {
+    .app {
+        .testimonials {
+
+            .introduction {
+                margin-top: 25rem;
+            }
+
+            .secondary-introduction {
+                margin-bottom: 5rem;
+            }
+
+            .wrapper {
+                padding-left: 1rem;
+                .testimonial-card {
+                    animation: none;
+                }
+            }
+        }       
+    }
+}

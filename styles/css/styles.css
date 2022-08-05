@@ -1,0 +1,517 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #1A1A1A;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introduction-stack {
+  text-align: center;
+  color: #fff;
+}
+
+.introduction {
+  text-align: center;
+  color: #fff;
+}
+
+.secondary-introduction {
+  text-align: center;
+}
+.secondary-introduction p {
+  font-size: 1.3rem;
+  color: rgb(201, 201, 201);
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: end;
+  margin: 1rem 1rem 0 0;
+  transition: color 0.3s ease-in-out;
+}
+.socials .social:last-child a {
+  font-size: 1.5rem;
+}
+.socials a {
+  font-size: 2rem;
+  color: #fff;
+}
+.socials a:hover {
+  color: rgb(224, 224, 224);
+}
+
+.app .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.app .top img {
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem;
+  filter: blur(0.5rem);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.app .top img:hover {
+  filter: blur(0);
+}
+.app .top .cursor-pfp {
+  transform: translateX(6rem) translateY(-5rem) rotate(-10deg);
+  transition: all 0.3s ease-out;
+}
+.app .top .cursor-pfp P {
+  font-size: 4rem;
+}
+.app .top h1 {
+  color: #fff;
+}
+.app .top #slogan {
+  width: 20rem;
+}
+.app .top p {
+  color: rgb(206, 206, 206);
+}
+.app .top #about {
+  width: 30rem;
+}
+.app .top .cta-connect {
+  margin-top: 5rem;
+  transition: all 0.3s ease;
+}
+.app .top .cta-connect a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.3s ease-out;
+}
+.app .top .cta-connect .cursor-connect {
+  transform: translateY(7.9rem) rotate(70deg);
+}
+.app .top .cta-connect .cursor-connect P {
+  font-size: 4rem;
+  color: #454545;
+}
+.app .top .cta-connect a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.app .projects {
+  margin-top: 20rem;
+}
+.app .projects .introduction {
+  margin-bottom: 2rem;
+}
+.app .projects .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.app .projects .cards .card {
+  background-color: #101010;
+  width: 36rem;
+  height: fit-content;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.app .projects .cards .card .card-img img {
+  width: 36rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.app .projects .cards .card .card-content .card-title {
+  text-align: center;
+}
+.app .projects .cards .card .card-content .card-title h1 {
+  color: #fff;
+}
+.app .projects .cards .card .card-content .card-title h1 span {
+  color: #ffe600;
+}
+.app .projects .cards .card .card-content .card-desc {
+  text-align: center;
+}
+.app .projects .cards .card .card-content .card-desc p {
+  width: 30rem;
+  color: rgb(240, 240, 240);
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  margin-left: 1rem;
+}
+.app .projects .cards .card .card-content .project-stack .introduction {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.app .projects .cards .card .card-content .project-stack .tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
+}
+.app .projects .cards .card .card-content .project-stack .tags .tag {
+  background-color: #232323;
+  padding: 1rem 2rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+}
+.app .projects .cards .card .card-content .project-stack .tags .tag p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.app .projects .cards .card .card-content .preview {
+  display: grid;
+  place-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.app .projects .cards .card .card-content .preview a {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  transition: background 0.3s ease-in;
+}
+.app .projects .cards .card .card-content .preview a:hover {
+  background-color: rgb(207, 207, 207);
+}
+.app .projects .cards .card:hover {
+  transform: translateY(-1.05rem);
+}
+.app .languages-tools .introduction {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+.app .languages-tools .langs-tools {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 2rem;
+}
+.app .languages-tools .langs-tools .lang-tool {
+  background-color: #313131;
+  padding: 2rem;
+  border-radius: 100%;
+  align-self: center;
+  transition: transform 0.3s ease-out;
+}
+.app .languages-tools .langs-tools .lang-tool a img {
+  width: 10rem;
+}
+.app .languages-tools .langs-tools .lang-tool:hover {
+  transform: scale(1.05);
+}
+.app .testimonials .introduction {
+  margin-top: 10rem;
+}
+.app .testimonials .wrapper {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+}
+.app .testimonials .wrapper .testimonial-card {
+  background-color: #272727;
+  color: #fff;
+  border-radius: 0.5rem;
+  min-width: 35rem;
+  margin-top: 2rem;
+  animation: animate 15s linear infinite alternate;
+}
+.app .testimonials .wrapper .testimonial-card .testimonial-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2rem;
+}
+.app .testimonials .wrapper .testimonial-card .testimonial-top h1 {
+  background-color: #191919;
+  font-size: 2rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .testimonials .wrapper .testimonial-card .testimonial-top p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.app .testimonials .wrapper .testimonial-card .testimonial-desc {
+  margin-left: 2rem;
+}
+.app .testimonials .wrapper .testimonial-card .testimonial-desc p {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.app .testimonials .wrapper::-webkit-scrollbar {
+  height: 0.5rem;
+  margin-top: 0.5rem;
+}
+.app .contact {
+  margin-top: 15rem;
+  display: grid;
+  place-items: center;
+}
+.app .contact .board {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.app .contact .board label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.app .contact .board label input {
+  background-color: #fbfbfb;
+  border-style: none;
+  border-radius: 0.5rem;
+  padding: 1.6rem 2rem;
+  color: #000;
+  outline-style: none;
+  font-size: 1.4rem;
+  width: 30rem;
+  height: 4rem;
+}
+.app .contact .board label p {
+  font-size: 3rem;
+  transform: translateX(-4rem);
+  padding-top: 0.5rem;
+}
+.app .contact .board label #message {
+  margin-right: 3rem;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  resize: none;
+}
+.app .contact .board label #message::placeholder {
+  padding: 1rem 0 0 2rem;
+  color: #75758a;
+  font-size: 1.3rem;
+}
+.app .contact #submit {
+  margin: 2rem 0;
+  border: none;
+  background-color: rgb(211, 211, 18);
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-out;
+}
+.app .contact #submit:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.5rem);
+  }
+}
+.delay {
+  animation: animate 9s linear infinite alternate;
+}
+
+@media screen and (min-width: 490px) {
+  .socials .social:last-child a {
+    font-size: 2.2rem;
+  }
+  .socials a {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .app .top #slogan {
+    width: fit-content;
+    font-size: 1.7rem;
+  }
+  .app .testimonials .wrapper .testimonial-card {
+    animation: animate 12s linear infinite alternate;
+  }
+  .delay {
+    animation: animate 14s linear infinite alternate;
+  }
+  @keyframes animate {
+    100% {
+      transform: translateX(-63rem);
+    }
+  }
+}
+@media screen and (min-width: 609px) {
+  .socials .social:last-child a {
+    font-size: 4rem;
+  }
+  .socials a {
+    font-size: 5rem;
+    color: #fff;
+  }
+  .app .top img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .app .top h1 {
+    font-size: 3rem;
+  }
+  .app .top #slogan {
+    width: fit-content;
+    font-size: 3rem;
+  }
+  .app .top p {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .app .top #about {
+    font-size: 2rem;
+    width: 50rem;
+    line-height: 3rem;
+  }
+  .app .top .cta-connect .cursor-connect {
+    transform: translateY(6.4rem) rotate(60deg);
+  }
+  .app .languages-tools .introduction {
+    margin-bottom: 4rem;
+  }
+  .app .languages-tools .langs-tools {
+    grid-template-columns: 1fr 1fr;
+  }
+  @keyframes animate {
+    100% {
+      transform: translateX(-49rem);
+    }
+  }
+}
+@media screen and (min-width: 675px) {
+  @keyframes animate {
+    100% {
+      transform: translateX(-43.75rem);
+    }
+  }
+}
+@media screen and (min-width: 780px) {
+  .introduction h1 {
+    font-size: 4rem;
+  }
+  .secondary-introduction p {
+    font-size: 1.6rem;
+  }
+  .app .contact .board label input {
+    width: 35rem;
+  }
+  .app .contact .board label #message {
+    width: 35rem;
+  }
+  .app .contact #submit {
+    padding: 1.5rem 3rem;
+  }
+  @keyframes animate {
+    100% {
+      transform: translateX(-33.25rem);
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .introduction h1 {
+    font-size: 5rem;
+  }
+  .secondary-introduction p {
+    font-size: 2rem;
+  }
+  .app .top #slogan {
+    font-size: 2.7rem;
+  }
+  .app .top #about {
+    width: 70rem;
+  }
+  .app .projects .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .app .languages-tools .langs-tools {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .app .contact .board label input {
+    width: 40rem;
+  }
+  .app .contact .board label #message {
+    width: 40rem;
+  }
+  .app .contact #submit {
+    padding: 2rem 4rem;
+  }
+  @keyframes animate {
+    100% {
+      transform: translateX(-3.5rem);
+    }
+  }
+}
+@media screen and (min-width: 1669px) {
+  .app .testimonials .introduction {
+    margin-top: 25rem;
+  }
+  .app .testimonials .secondary-introduction {
+    margin-bottom: 5rem;
+  }
+  .app .testimonials .wrapper {
+    padding-left: 1rem;
+  }
+  .app .testimonials .wrapper .testimonial-card {
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
